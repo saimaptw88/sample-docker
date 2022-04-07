@@ -1,0 +1,22 @@
+development:
+  clients:
+    default:
+      database: sample_docker_development
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: primary
+        server_selection_timeout: 1
+  options:
+
+test:
+  clients:
+    default:
+      database: sample_docker_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
